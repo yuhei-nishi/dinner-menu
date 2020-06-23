@@ -1,0 +1,29 @@
+.header{
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  &_left{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_right{
+    height: 100%;
+    width: 200px;
+    &_list{
+      display: flex;
+      line-height: 50px;
+      li{
+        padding-right: 30px;
+      }
+    }
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+}
