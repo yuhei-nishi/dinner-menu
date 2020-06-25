@@ -7,7 +7,6 @@
     width: 100%;
     &_search{
       margin-top: 30px;
-      // background-color: coral;
       height: 100px;
       width: 100%;
       text-align: center;
@@ -19,6 +18,45 @@
       &_submit{
         height: 34px;
         width: 50px;
+      }
+    }
+  }
+  &_titel{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &_list{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    &_name{
+      padding-top: 60px;
+      height: 30px;
+      width: 380px;
+    }
+  }
+  &_content{
+    height: calc(100%-50px);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    &_view{
+      height: 380px;
+      width: 380px;
+      background-image: url('フライパン.png');
+      background-size: cover;
+      position: relative;
+      &_image{
+        height: 150px;
+        width: 150px;
+        background-color:white;
+        position: absolute;
+        top: 45px;
+        left: 115px;
+        border-radius: 20px;
       }
     }
   }
