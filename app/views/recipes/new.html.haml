@@ -1,1 +1,36 @@
-= render "header"
+.recipe
+  = render "header"
+  .recipe_box
+    .recipe_box_left
+      = form_with model: @recipe do |f|
+        .recipe_box_left_titel
+          レシピ新規登録
+        .recipe_box_left_name
+          料理名
+        .recipe_box_left_nameinput
+          = f.text_field :name
+        .recipe_box_left_image
+          料理画像
+        .recipe_box_left_imageinput
+          = f.file_field :image
+        .recipe_box_left_item
+          材料
+        .recipe_box_left_iteminput
+          = f.text_field :item
+          = f.text_field :item
+          = f.text_field :item
+          = f.text_field :item
+    .recipe_box_right
+      = form_with model: @recipe do |f|
+        .recipe_box_right_create
+          作り方
+        .recipe_box_right_createinput
+          = f.text_area :item
+        .recipe_box_right_image
+          画像
+        .recipe_box_right_imageinput
+          = f.file_field :image
+        .recipe_box_right_comment
+          コメント
+        .recipe_box_right_commentinput
+          = f.text_area :comment

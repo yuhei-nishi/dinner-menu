@@ -1,0 +1,20 @@
+.recipe{
+  height: 100vh;
+  width: 100vw;
+  &_box{
+    height: calc(100vh - 50px);
+    width: 100%;
+    background-color: rgb(236, 204, 144);
+    display: flex;
+    &_left{
+      height: 100%;
+      width: 50%;
+      // background-color: green;
+    }
+    &_right{
+      height: 100%;
+      width: 50%;
+      // background-color: blue;
+    }
+  }
+}
