@@ -17,20 +17,20 @@
           材料
         .recipe_box_left_iteminput
           = f.text_field :item
-          = f.text_field :item
-          = f.text_field :item
-          = f.text_field :item
     .recipe_box_right
-      = form_with model: @recipe do |f|
-        .recipe_box_right_create
-          作り方
-        .recipe_box_right_createinput
-          = f.text_area :item
-        .recipe_box_right_image
-          画像
-        .recipe_box_right_imageinput
-          = f.file_field :image
-        .recipe_box_right_comment
-          コメント
-        .recipe_box_right_commentinput
-          = f.text_area :comment
+      .recipe_box_right_menu
+        = form_with model: @recipe do |f|
+          .recipe_box_right_menu_create
+            作り方
+          .recipe_box_right_menu_createinput
+            = f.text_area :item
+      .recipe_box_right_file
+        = form_with model: @recipe do |f|
+          .recipe_box_right_file_image
+            画像
+          .recipe_box_right_file_imageinput
+            = f.file_field :image
+          .recipe_box_right_file_comment
+            コメント
+          .recipe_box_right_file_commentinput
+            = f.text_area :comment
