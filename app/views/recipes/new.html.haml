@@ -17,6 +17,8 @@
           材料
         .recipe_box_left_iteminput
           = f.text_field :item
+        .recipe_box_left_add
+          ＋材料追加
     .recipe_box_right
       .recipe_box_right_menu
         = form_with model: @recipe do |f|
@@ -24,6 +26,8 @@
             作り方
           .recipe_box_right_menu_createinput
             = f.text_area :item
+          .recipe_box_right_menu_add
+            ＋作り方追加
       .recipe_box_right_file
         = form_with model: @recipe do |f|
           .recipe_box_right_file_image
