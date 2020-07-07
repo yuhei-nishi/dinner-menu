@@ -19,22 +19,21 @@
           = f.text_field :item
         .recipe_box_left_add
           ＋材料追加
+    .recipe_box_center
+      = form_with model: @recipe do |f|
+        .recipe_box_center_menu
+          作り方
+        .recipe_box_center_input
+          = f.text_area :item
+        .recipe_box_center_add
+          ＋作り方追加
     .recipe_box_right
-      .recipe_box_right_menu
-        = form_with model: @recipe do |f|
-          .recipe_box_right_menu_create
-            作り方
-          .recipe_box_right_menu_createinput
-            = f.text_area :item
-          .recipe_box_right_menu_add
-            ＋作り方追加
-      .recipe_box_right_file
-        = form_with model: @recipe do |f|
-          .recipe_box_right_file_image
-            画像
-          .recipe_box_right_file_imageinput
-            = f.file_field :image
-          .recipe_box_right_file_comment
-            コメント
-          .recipe_box_right_file_commentinput
-            = f.text_area :comment
+      = form_with model: @recipe do |f|
+        .recipe_box_right_file_image
+          画像
+        .recipe_box_right_file_imageinput
+          = f.file_field :image
+        .recipe_box_right_file_comment
+          コメント
+        .recipe_box_right_file_commentinput
+          = f.text_area :comment
