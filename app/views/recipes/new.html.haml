@@ -8,7 +8,7 @@
         .recipe_box_left_name
           料理名
         .recipe_box_left_nameinput
-          = f.text_field :name
+          = f.text_field :name, placeholder: "例) たまご焼き"
         .recipe_box_left_image
           料理画像
         .recipe_box_left_imageinput
@@ -16,7 +16,7 @@
         .recipe_box_left_item
           材料
         .recipe_box_left_iteminput
-          = f.text_field :item
+          = f.text_field :item, placeholder: "例) たまご"
         .recipe_box_left_add
           ＋材料追加
     .recipe_box_center
@@ -24,7 +24,7 @@
         .recipe_box_center_menu
           作り方
         .recipe_box_center_input
-          = f.text_area :item
+          = f.text_area :item, placeholder: "例) フライパンに油をひきます。"
         .recipe_box_center_add
           ＋作り方追加
     .recipe_box_right
